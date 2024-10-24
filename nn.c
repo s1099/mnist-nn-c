@@ -175,14 +175,14 @@ void test_net(double **test_images, int *test_labels, double *h_weights, double 
 }
 
 // print first n images and labels
-void print_data(unsigned char **images, int *labels, int n)
+void print_data(double **images, int *labels, int n)
 {
     for (int i = 0; i < n; i++)
     {
         printf("label: %d\n", labels[i]);
         for (int j = 0; j < INPUT_SIZE; j++)
         {
-            printf("%3d ", images[i][j]);
+            printf("%3.3f ", images[i][j]);
             if ((j + 1) % 28 == 0)
                 printf("\n");
         }
