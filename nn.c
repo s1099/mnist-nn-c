@@ -6,10 +6,10 @@
 
 #define INPUT_SIZE 784      // 28x28
 #define HIDDEN_SIZE 128
-#define OUTPUT_SIZE 10     // 0-9
+#define OUTPUT_SIZE 10      // 0-9
 #define TRAIN_SIZE 60000
 #define TEST_SIZE 10000
-#define LEARNING_RATE 0.3
+#define LEARNING_RATE 0.5
 #define EPOCHS 10
 
 #define TIMEIT(label, code) { \
